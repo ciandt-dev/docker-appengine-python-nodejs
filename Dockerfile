@@ -20,7 +20,12 @@ RUN \
    unzip /tmp/google_appengine_1.9.15.zip -d /usr/local/google/ &&\
    rm -rf /tmp/google_appengine_1.9.15.zip
 
-EXPOSE 8080
+ADD root/.oh-my-zsh/custom/appengine.zsh /root/.oh-my-zsh/custom/appengine.zsh
+
+EXPOSE 8083 
+EXPOSE 8000 
+
+WORKDIR /workspace
 
 # Define default command.
 CMD ["zsh"]

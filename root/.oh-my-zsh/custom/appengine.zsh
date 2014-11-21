@@ -1,0 +1,1 @@
+export PATH=/usr/local/google/google_appengine:$PATH

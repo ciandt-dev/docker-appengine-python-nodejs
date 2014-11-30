@@ -22,8 +22,12 @@ RUN \
 
 ADD root/.oh-my-zsh/custom/appengine.zsh /root/.oh-my-zsh/custom/appengine.zsh
 
+ADD root/.appcfg_nag root/.appcfg_nag
+RUN groupadd -r deeone
+RUN useradd --create-home --gid deeone deeone
+
 EXPOSE 8083 
-EXPOSE 8000 
+EXPOSE 8000	 
 
 WORKDIR /workspace
 

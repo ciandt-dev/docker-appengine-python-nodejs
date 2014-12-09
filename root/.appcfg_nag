@@ -1,3 +1,0 @@
-# Tell Google App Engine not to check for new versions 
-opt_in: false
-timestamp: 0
